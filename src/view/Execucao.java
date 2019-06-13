@@ -30,9 +30,8 @@ public class Execucao {
 			int r = i+1;
 			disciplinas[i] = JOptionPane.showInputDialog(null, "Digite a disciplina " + r);
 		}
-		for (int a = 0; a < dis  ;a++) {
-			int c = a+1;
-			JOptionPane.showMessageDialog(null,"Disciplina: "+c+": "+ disciplinas[a]);
+		for (int i = 0; i < dis  ;i++) {
+			JOptionPane.showMessageDialog(null,professor.getDisciplinas()[i]);
 		}
 		professor.setDisciplinas(disciplinas);
 	}catch (Exception e) {
@@ -46,9 +45,8 @@ public class Execucao {
 			int t = i+1;
 			cursos[i] = JOptionPane.showInputDialog(null, "Digite o curso " + t);
 		}
-		for (int b = 0; b < cur  ;b++) {
-			int d = b+1;
-			JOptionPane.showMessageDialog(null,"Curso "+d+": "+ cursos[b]);
+		for (int i = 0; i < cur  ;i++) {
+			JOptionPane.showMessageDialog(null,professor.getCursos()[i]);
 		}
 		professor.setCursos(cursos);
 	}catch (Exception e) {
